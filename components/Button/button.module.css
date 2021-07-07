@@ -1,0 +1,31 @@
+.button {
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    min-height: 3rem;
+    min-width: fit-content;
+    max-width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.2s;
+}
+.button:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: var(--box-shadow-1);
+    transform: translateY(-3px);
+    background-color: #0069d9;
+}
+.button:active {
+    transform: translate(-1px, 1px);
+    box-shadow: var(--box-shadow-light);
+}
