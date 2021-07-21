@@ -2,9 +2,24 @@ import { useState } from "react";
 import Layout from "../components/Layout/layout"
 import Table from "../components/Table/table"
 
+const DICTIONARY = {
+    labels:{
+        id:{he:""}
+
+    }
+}
+
 const columns = [
-    { key: 'id', name: 'ID' },
-    { key: 'title', name: 'TITLE' },
+    { key: 'id', name: 'id', label: "מזהה", type: "string" },
+    { key: 'title', name: 'title', label: "שם", type: "string" },
+    { key: 'commercialName', name: 'commercialName', label: "שם מסחרי", type: "string" },
+    { key: 'companyID', name: 'companyNumber', label: "ח.פ / מספר עוסק", type: "string" },
+    { key: 'companyType', name: 'companyType', label: "סוג עוסק", type: "string" },
+    { key: 'phone', name: 'phone', label: "טלפון", type: "string" },
+    { key: 'email', name: 'email', label: "אימייל", type: "string" },
+    { key: 'address', name: 'address', label: "כתובת", type: "string" },
+    { key: 'description', name: 'description', label: "הערות", type: "string" },
+    { key: 'status', name: 'status', label: "סטטוס", type: "string" },
 ];
 
 const mocks = [
